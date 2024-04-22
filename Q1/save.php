@@ -34,7 +34,7 @@ function GetMember($job_idx) {
  * @return array 구성원 배열
  */
 function GetMembers($memberMin, $memberMax) {
-	// 그룹에 포함할 인원수 랜덤 추출
+    // 그룹에 포함할 인원수 랜덤 추출
     $numMembers = rand($memberMin, $memberMax); 
     
     $result = [];
@@ -118,15 +118,15 @@ function SelectCrews($candidate_groups) {
     $crews = [];
     foreach($candidate_groups as $group) {
     	// 지원자 추출
-		$candidates = GetCandidates($group, $remain_jobs);
+	$candidates = GetCandidates($group, $remain_jobs);
 
-		// 승무원 선택
+	// 승무원 선택
         $crew = GetCrew($candidates);
         
         // 선택 가능한 남은 직업 정리
-		ArrangeRemainJobs($crew, $remain_jobs);
+	ArrangeRemainJobs($crew, $remain_jobs);
 
-		// 승무원 할당
+	// 승무원 할당
         $crews[] = $crew;
     }
     return $crews;
@@ -142,7 +142,7 @@ function CalculateSurvival($crews) {
     $total = 0;
 
     foreach ($crews as $crew) {
-		$total += $crew['stat'];
+	$total += $crew['stat'];
     }
     return $total / (count($crews) * 100);
 }
