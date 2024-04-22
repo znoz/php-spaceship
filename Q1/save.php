@@ -88,8 +88,9 @@ function GetCrew($candidates) {
 }
 
 /**
- * 승무원 선택
+ * 선택 가능한 남은 직업 정리
  *
+ * @param array $crew 이번에 선택한 승무원
  * @param array $remain_jobs 선택 가능한 남은 직업 (참조 호출)
  * @return array 승무원 배열
  */
@@ -106,14 +107,14 @@ function ArrangeRemainJobs($crew, &$remain_jobs) {
 }
 
 /**
- * 구성원 선택
+ * 승무원 선택
  *
- * @param array $groups 그룹별 구성원 정보가 저장된 배열
+ * @param array $candidate_groups 지원자 그룹
  * @return array 구성원 배열
  */
 function SelectCrews($candidate_groups) {
-	// 직업별 최소 1명 구성을 위한 임시 배열
-	$remain_jobs = JOBS;
+    // 직업별 최소 1명 구성을 위한 임시 배열
+    $remain_jobs = JOBS;
 	
     $crews = [];
     foreach($candidate_groups as $group) {
