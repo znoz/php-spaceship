@@ -1,4 +1,9 @@
 <?php
+/**
+ * 평균 구하기
+ *
+ * @return float 평균 값
+ */
 function GetAverage() {
     $servername = "your_server_name";
     $username = "your_username";
