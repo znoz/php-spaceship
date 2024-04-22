@@ -51,7 +51,7 @@ erDiagram
 ```
 
 # 테이블 생성 쿼리
-```SQL
+```mysql
 # 그룹
 CREATE TABLE Groups (
     groupKey VARCHAR(10) NOT NULL PRIMARY KEY,
