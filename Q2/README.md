@@ -9,7 +9,7 @@ Q1에서 실행한 함수의 조건과 결과를 저장할 수 있는 테이블 
 Groups | | 그룹 테이블 (A, B, C, D)
 | | groupKey | 그룹 키
 | | groupName | 그룹 명
-Members | | 멤버 테이블
+Members | | 후보자 멤버 테이블
 | | memberId | 멤버 id
 | | groupKey | 멤버가 속한 그룹 키
 | | stat | 능력치
@@ -58,7 +58,7 @@ CREATE TABLE Groups (
     groupName VARCHAR(100) NOT NULL
 );
 
-# 멤버
+# 후보자 멤버
 CREATE TABLE Members (
     memberId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     groupKey VARCHAR(10) NOT NULL,
