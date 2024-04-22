@@ -1,6 +1,6 @@
 <?php
 // 그룹 멤버 최소 인원
-const MEMBER_MIN = 3;
+const MEMBER_MIN = 4;
 
 // 그룹 멤버 최대 인원
 const MEMBER_MAX = 10;
