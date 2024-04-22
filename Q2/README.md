@@ -18,7 +18,7 @@ Crews | | 승무원 테이블
 | | pickId | 선발 id
 | | groupKey | 그룹 키
 | | memberId | 멤버 id
-Picks | | 승무원 선발 테이블
+Picks | | 선발 회차별 성공률
 | | pickId | 선발 id (선발 회차)
 | | survivalRate | 성공률 계산 결과
 
