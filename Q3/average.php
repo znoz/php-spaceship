@@ -29,4 +29,4 @@ function GetAverage() {
 // 샘플 실행
 $average = GetAverage();
 
-printf("평균 성공률: %f", $average);
+printf("평균 성공률: %0.1f%%", $average);
